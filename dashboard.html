@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Book Library</h1>
+        <input type="text" id="searchBar" placeholder="Search for books...">
+        <label for="genreFilter">Genre</label>
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select>
+        
+    </header>
+    <main id="bookGallery">
+        <div class="book" data-genre="fiction">
+            <img src="images/To Kill A Mockingbird Book Covers & Concepts – PRINT Magazine.jpg" alt="To Kill a Mockingbird">
+            <h3>To Kill a Mockingbird by Harper Lee</h3>
+            <a href="download.php?book=To Kill a Mockingbird" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/TKMFullText.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/1984 George Orwell - Book Cover.jpg" alt="1984">
+            <h3>1984 by George Orwell</h3>
+            <a href="download.php?book=1984" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/1984.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="non-fiction">
+            <img src="images/SAPIENS, μια εικονογραφημένη ιστορία – Εκδόσεις Αλεξάνδρεια.jpg" alt="Sapiens">
+            <h3>Sapiens by Yuval Noah Harari</h3>
+            <a href="download.php?book=Sapiens" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/yuval_noah_harari-sapiens_a_brief_histor.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="non-fiction">
+            <img src="images/Educated by Tara Westover.jpg" alt="Educated">
+            <h3>Educated by Tara Westover</h3>
+            <a href="download.php?book=Educated" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Educated by Tara Westover.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="science">
+            <img src="images/The World Is Flat 3_0_ A Brief History of the….jpg" alt="A Brief History of Time">
+            <h3>A Brief History of Time by Stephen Hawking</h3>
+            <a href="download.php?book=A Brief History of Time" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/stephen_hawking_a_brief_history_of_time.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="science">
+            <img src="images/The Selfish Gene.jpg" alt="The Selfish Gene">
+            <h3>The Selfish Gene by Richard Dawkins</h3>
+            <a href="download.php?book=The Selfish Gene" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The-Selfish-Gene-R.-Dawkins-1976-WW-.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/Guns, Germs, and Steel.jpg" alt="Guns, Germs, and Steel">
+            <h3>Guns, Germs, and Steel by Jared Diamond</h3>
+            <a href="download.php?book=Guns, Germs, and Steel" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/diamond-selections.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/The diary of a young girl.jpg" alt="The Diary of a Young Girl">
+            <h3>The Diary of a Young Girl by Anne Frank</h3>
+            <a href="download.php?book=The Diary of a Young Girl" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Diary of a Young Girl by Anne Frank.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/huckleberry_finn.jpg" alt="The Adventures of Huckleberry Finn">
+            <h3>The Adventures of Huckleberry Finn by Mark Twain</h3>
+            <a href="download.php?book=The Adventures of Huckleberry Finn" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Adventures of Huckleberry Finn by Mark Twain.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/sense_and_sensibility.jpg" alt="Sense and Sensibility">
+            <h3>Sense and Sensibility by Jane Austen</h3>
+            <a href="download.php?book=Sense and Sensibility" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Sense and Sensibility by Jane Austen.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/time_machine.jpg" alt="The Time Machine">
+            <h3>The Time Machine by H.G. Wells</h3>
+            <a href="download.php?book=The Time Machine" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Time Machine.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/mathilda.jpg" alt="Mathilda">
+            <h3>Mathilda by Mary Shelley</h3>
+            <a href="download.php?book=Mathilda" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Mathilda by Mary Shelley.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/ulysses.jpg" alt="Ulysses">
+            <h3>Ulysses by James Joyce</h3>
+            <a href="download.php?book=Ulysses" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Ulysses by James Joyce.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/abbot.jpg" alt="The Abbot">
+            <h3>The Abbot by Walter Scott</h3>
+            <a href="download.php?book=The Abbot" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Abbot by Walter Scott.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/oliver_twist.jpg" alt="Oliver Twist">
+            <h3>Oliver Twist by Charles Dickens</h3>
+            <a href="download.php?book=Oliver Twist" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Oliver Twist by Charles Dickens.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/castle_of_otranto.jpg" alt="The Castle of Otranto">
+            <h3>The Castle of Otranto by Horace Walpole</h3>
+            <a href="download.php?book=The Castle of Otranto" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Castle of Otranto by Horace Walpole.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="fiction">
+            <img src="images/Acres of Diamonds Book cover for Tom Broschinsky….jpg" alt="Acres of Diamonds">
+            <h3>Acres of Diamonds by Russell Conwell</h3>
+            <a href="download.php?book=Acres of Diamonds" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/acres of diamonds.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/A Tale of Two Cities_ Dickens, Charles.jpg" alt="A Tale of Two Cities">
+            <h3>A Tale of Two Cities by Charles Dickens</h3>
+            <a href="download.php?book=A Tale of Two Cities" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/A Tale of Two Cities.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/Moby Dick (English Edition).jpg" alt="Moby Dick">
+            <h3>Moby Dick by Herman Melville</h3>
+            <a href="download.php?book=Moby Dick" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Moby-Dick or, The Whale.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/Frankenstein_ Adapted for Modern Readers.jpg" alt="Frankenstein">
+            <h3>Frankenstein by Mary Shelley</h3>
+            <a href="download.php?book=Frankenstein" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/Frankenstein.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/War Of The Worlds (Book).jpg" alt="War Of The Worlds">
+            <h3>War Of The Worlds by H.G. Wells</h3>
+            <a href="download.php?book=War Of The Worlds" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The War of the Worlds.pdf">Read</a>            
+        </div>
+        <div class="book" data-genre="history">
+            <img src="images/The Science of Getting Rich_.jpg" alt="The Science of Getting Rich">
+            <h3>The Science of Getting Rich by Wallace D. Wattles</h3>
+            <a href="download.php?book=The Science of Getting Rich" download>Download</a>
+            <a href="#" class="read-link" data-pdf="pdf/The Science of Getting Rich.pdf">Read</a>            
+        </div>
+    </main>
+    <div id="pdfViewer" style="display:none;">
+        <div id="iframeContainer">
+            <iframe id="myIframe" src="" width="100%" height="100%"></iframe>
+        </div>
+        <button id="closeViewer" style="font-size: 30px; background: none; border: none; cursor: pointer;">&times;</button>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
